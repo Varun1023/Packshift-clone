@@ -1,182 +1,101 @@
-@media only screen and (min-width:200px) and (max-width:567px) {
-   
-   header{
-      position: sticky;
-      top: 0%;
-   }
 
-   header nav aside:nth-child(1) {
-      margin: auto;
-   }
+/* media.css - Mobile Styles */
 
-   header nav aside:nth-child(2) {
-      display: none;
-   }
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
 
-   main {
-      background-size: cover;
-   }
+    header nav aside:nth-child(1),
+    header nav aside:nth-child(2) {
+        font-size: 20px;
+        margin: 10px 0;
+    }
 
-   main section {
-      display: block;
+    main section {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-   }
+    main section aside {
+        width: 100% !important;
+        padding: 10px 0;
+    }
 
-   .form{
-      width: 83%;
-   }
+    .form {
+        width: 90% !important;
+    }
 
-   main section aside:nth-child(1) {
-      width: 100%;
-   }
+    .form-r1, .form-r2, .form-r3, .form-r4, .form-r5, .form-r6 {
+        width: 100% !important;
+        padding: 5px 0;
+    }
 
-   main section aside:nth-child(2) {
-      width: 100%;
-   }
+    .form-r6 {
+        flex-direction: column;
+        align-items: center;
+    }
 
-   main section aside h2,
-   h3 {
-      text-align: center;
-   }
+    .form-r6 input,
+    .yellow-box {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 5px;
+    }
 
-   main section aside img {
-      padding: 2px 15px;
-   }
+    .youtube .box {
+        width: 100% !important;
+        height: auto;
+    }
 
-   main section .packing {
-      padding-left:23px;
+    .row-1, .row-2 {
+        flex-direction: column;
+    }
 
-   }
+    .row-1-left, .row-1-right,
+    .row-2-left, .row-2-right {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
 
-   .box {
-      width: 98%;
-      background-color: #ccc;
-      margin: 1%;
-      border-radius: 10px;
-   }
+    .get-quote {
+        margin: 10px auto !important;
+        display: block;
+    }
 
-   .core-head {
-      padding-left: 82px;
-   }
+    .features {
+        justify-content: center;
+    }
 
-   section .row-1 {
-      display: flex;
-      flex-wrap: wrap;
-   }
+    .feature-1 {
+        width: 80% !important;
+    }
 
-   section .row-1-left {
-      width: 100%;
-      margin: 10px;
+    .iconrow {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-   }
+    .icon1 {
+        margin: 10px;
+    }
 
-   .row-1-left-head {
-      padding: 0px 0px;
-   }
+    .imgscroll img {
+        padding: 10px;
+        width: 100%;
+    }
 
-   section .row-1-left img {
-      width: 100%;
-   }
+    .address-phone {
+        margin: 10px auto !important;
+        width: 80% !important;
+    }
 
-   section .row-1-right {
-      width: 100%;
-   }
-
-   .get-quote {
-      margin-left: 162px;
-   }
-
-   section .row-2 {
-      display: flex;
-      flex-wrap: wrap;
-   }
-
-   section .row-2-left {
-      width: 100%;
-      margin: 10px;
-
-   }
-
-   .row-2-left-head {
-      padding: 0px 0px;
-   }
-
-   section .row-2-left img {
-      width: 100%;
-   }
-
-   section .row-2-right {
-      width: 100%;
-   }
-
-   .whypack {
-      padding-left: 113px;
-   }
-
-   .whychoose {
-      padding-left: 75px;
-   }
-
-   .feature-1 {
-      padding: 10px 10px;
-      width: 183px;
-   }
-
-
-   .ourachivement {
-      padding-left: 131px;
-
-   }
-
-   .ourachivement i{
-      padding-left: 0px;
-
-   }
-   .achsubline {
-      padding-left: 0px;
-   }
-
-   .ourachivement h4 {
-
-      padding: 8px;
-      
-   }
-
-   .iconrow {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 1px 1px;
-   }
-
-   .icon1 {
-      width: 36%;
-
-   }
-
-   .happycustomers{
-      max-width: 100%;
-      padding-left: 131px;
-   }
-   
-   .ourclients{
-      max-width: 100%;
-      padding-left: 131px;
-   }
-
-   .imgscroll{
-      display: flex;
-      flex-wrap: wrap;
-      padding-left: 0px;
-   }
-
-   .imgscroll img{
-     
-      padding: 0px 133px;
-      
-   }
-   .address-phone{
-
-   width: 50%;
-   margin-left: 111px;
-   }
+    .whypack, .whychoose,
+    .ourachivement, .achsubline {
+        flex-direction: column;
+        padding: 10px !important;
+        text-align: center;
+    }
 }
